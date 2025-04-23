@@ -1,0 +1,169 @@
+/* Style général */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #f8f9fa;
+}
+
+.content {
+  padding: 20px 0;
+  min-height: calc(100vh - 120px);
+}
+
+/* Navbar */
+.navbar {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Cards */
+.card {
+  border: none;
+  box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15);
+  margin-bottom: 20px;
+}
+
+.card-header {
+  font-weight: 600;
+}
+
+/* Tableaux */
+.table-responsive {
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.table {
+  margin-bottom: 0;
+}
+
+.table thead th {
+  background-color: #f8f9fa;
+  border-bottom: 2px solid #dee2e6;
+}
+
+/* Boutons */
+.btn {
+  border-radius: 4px;
+}
+
+.btn-sm {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+}
+
+/* Formulaires */
+.form-control:focus {
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+  border-color: #86b7fe;
+}
+
+/* Images */
+.profile-img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.book-img {
+  max-width: 100px;
+  height: auto;
+}
+
+/* Badges */
+.badge {
+  font-weight: 500;
+  padding: 0.35em 0.65em;
+}
+
+/* Pagination */
+.pagination .page-link {
+  color: #0d6efd;
+}
+
+.pagination .page-item.active .page-link {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+}
+
+/* Footer */
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  background-color: #f8f9fa;
+  padding: 15px 0;
+  margin-top: 20px;
+}
+
+/* Utilitaires */
+.action-buttons .btn {
+  margin: 0 2px;
+}
+
+.action-buttons .btn:last-child {
+  margin-right: 0;
+}
+
+/* États des emprunts */
+.status-en-cours {
+  background-color: #cff4fc;
+  color: #055160;
+}
+
+.status-retard {
+  background-color: #f8d7da;
+  color: #842029;
+}
+
+.status-retourne {
+  background-color: #d1e7dd;
+  color: #0f5132;
+}
+
+/* Styles pour le chatbot */
+#chatbotModal .modal-dialog {
+  max-width: 500px;
+}
+
+#chatbotModal .modal-content {
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+#chatbotModal .modal-header {
+  border-bottom: none;
+}
+
+#chatbotModal .modal-body {
+  padding: 0;
+}
+
+#chatbotModal iframe {
+  border: none;
+  width: 100%;
+  height: 600px;
+}
+
+/* Animation pour l'icône du chatbot */
+.nav-link .fa-robot {
+  transition: transform 0.3s ease;
+}
+
+.nav-link:hover .fa-robot {
+  transform: scale(1.2);
+}
+
+/* Style pour le badge de notification du chatbot */
+.chatbot-badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(50%, -50%);
+  background-color: #dc3545;
+  color: white;
+  border-radius: 50%;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+}
